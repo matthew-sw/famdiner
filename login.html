@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Import CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <title>FamDiner | Login</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <a href="index.html" class="left-header">
+            <div class="logo">
+            </div>
+        </a>
+        <div class="right-header">
+            <a href="register.html" class="button">REGISTER</a>
+            <a href="login.html" class="button">LOGIN</a>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="nav-bar">
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li class="dropdown"><a href="menu.html">MENU &#x25BE</a>
+                    <div class="dropdown-content">
+                        <a href="menu.html#burger">BURGER</a>
+                        <a href="menu.html#rice-pasta">RICE & PASTA</a>
+                        <a href="menu.html#seafood">SEAFOOD</a>
+                    </div>
+                </li>
+                <li><a href="about-us.html">ABOUT US</a></li>
+                <div class="clear"></div>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+   
+    <!-- Content -->
+    <div class="content">
+        <div class="login-form">
+            <h2>Login</h2>
+            <form>
+                <div class="form-component">
+                    <label for="login-email">Email</label>
+                    <input id="login-email" type="text">
+                    <label id="login-email-valid" class="warning"></label> 
+                </div>
+                <div class="form-component">
+                    <label for="login-pass">Password</label>
+                    <input id="login-pass" type="password">
+                    <label id="login-pass-valid" class="warning"></label>
+                </div>
+                <input onclick="login()" type="button" value="Login" class="button">
+                <p>Want to join us? Register <a href="register.html">here!</a></p>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <div class="footer">
+        <div class="icon-footer">
+            <a href="https://twitter.com" target="_blank" class="tw-icon"></a>
+            <a href="https://facebook.com" target="_blank" class="fb-icon"></a>
+            <a href="https://instagram.com" target="_blank" class="ig-icon"></a>
+        </div>
+        <div class="text-footer">
+            <p>Copyright &copy 2021 Matthew Sebastian Wijaya. All Rights Reserved</p>
+        </div>
+    </div>
+
+    <!-- Import JS -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

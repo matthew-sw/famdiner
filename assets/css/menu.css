@@ -1,0 +1,139 @@
+/* Background Image */
+.background{
+    background-image: url('../images/background_menu.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: max-content;
+
+}
+/* Black Filter */
+.black-filter{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Content */
+.content{
+    text-align: center;
+}
+.container{
+    padding-top: 48px;
+    padding-bottom: 48px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    gap: 52px;
+}
+
+/* General Section Setting */
+.container-text h1{
+    margin-bottom: 24px;
+}
+.container-card{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Card */
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    background-color: #FFFFFF;
+    position: relative;
+    border-radius: 10px;
+    width: 18%;
+    height: 300px;
+    gap: 8px;
+    padding: 24px;
+}
+.card:hover{
+    background-color: rgba(255, 242, 204, 0.9);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.card-text{
+    margin-bottom: 32px;
+}
+.card-text p{
+    color: #000000;
+    font-weight:550;
+}
+.card-image{
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 140px;
+    height: 140px;
+}
+.card span{
+    position: absolute;
+    background-color: #FFD700;
+    color: #FFFFFF;
+    width: 100%;
+    padding: 10px;
+    bottom: 0;
+    border-radius: 0 0 10px 10px;
+}
+
+/* Image */
+.kromer{
+    background-image: url('../images/kromer_burger.png');
+}
+.cheese{
+    background-image: url('../images/cheeseburger.png');
+}
+.chicken{
+    background-image: url('../images/chicken_burger.png');
+}
+.hopper{
+    background-image: url('../images/hopper_burger.png');
+}
+.chicken-rb{
+    background-image: url('../images/chicken_ricebowl.png');
+}
+.fried-rice{
+    background-image: url('../images/egg_fried_rice.png');
+}
+.lasagna{
+    background-image: url('../images/lasagna.png');
+}
+.spaghetti{
+    background-image: url('../images/spaghetti.png');
+}
+.fish{
+    background-image: url('../images/fish.png');
+}
+.oyster{
+    background-image: url('../images/Oyster.png');
+}
+.prawn{
+    background-image: url('../images/Prawn.png');
+}
+.squid{
+    background-image: url('../images/squid.png');
+}
+
+/* Responsive */
+@media only screen and (max-width:600px){
+    .container-card{
+        flex-wrap: wrap;
+    }
+    .card{
+        width: 36%;
+        margin-bottom: 20px;
+    }
+    .card-image{
+        width: 100px;
+        height: 100px;
+    }
+}

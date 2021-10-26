@@ -1,0 +1,17 @@
+/* Content */
+.content{
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+.form-component{
+    align-items: flex-start;
+}
+.gender{
+    padding-top: 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.gender input[type="radio"]{
+    display: inline;
+}

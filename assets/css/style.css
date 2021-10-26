@@ -1,0 +1,191 @@
+/* General Setting */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+p{
+    line-height: 32px;
+}
+a{
+    text-decoration: none;
+}
+.button{
+    background-color: #2B2B2B;
+    padding: 10px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.clear {
+    clear: both;
+}
+
+/* Header */
+.header{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to bottom right, #1A2339, #4F66A2);
+}
+.left-header{
+    margin-left: 2%;
+}
+.logo{
+    background-image: url('../images/logo.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80px;
+    width: 200px;
+}
+.right-header{
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 2%;
+    gap: 12px;
+}
+
+/* Navigation Bar */
+.nav-bar {
+	background: #2B2B2B;
+}
+.menu li{
+    list-style: none;
+	float: left;
+}
+.menu li a {
+	font-size:0.823em;
+	display:block;
+	padding: 15px 25px;
+}
+.active, .menu li a:hover, .dropdown-content a:hover{
+    color: #000000;
+	background-color: #81F2FF;
+}
+.menu li a:hover, .dropdown-content a:hover{
+    transition: 0.5s;
+}
+.dropdown{
+    position: relative;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#333333;
+    width: 100%;
+    z-index: 1;
+}
+.dropdown-content a {
+    padding: 15px 25px;
+    display: block;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Footer */
+.footer{
+    height: 72px;
+    display: flex;
+    background-color: #333333;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+.icon-footer{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+.tw-icon{
+    background-image: url('../images/twitter.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+}
+.fb-icon{
+    background-image: url('../images/facebook.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+}
+.ig-icon{
+    background-image: url('../images/instagram.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+}
+.text-footer p{
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+/* General Form Setting */
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    width: 60%;
+}
+.form-component{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.login-form, .register-form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    gap: 36px;
+}
+.login-form h2, .register-form h2, form p, input, label, select, option{
+    color: #000000;
+    font-weight: normal;
+}
+form a{
+    color: #394BF4;
+    font-weight: normal;
+}
+input[type="text"], input[type="password"], select, option{
+    width: 100%;
+    padding: 10px;
+    background: none;
+    outline: none;
+}
+input[type="text"], input[type="password"]{
+    border: none;
+    border-bottom: 1px solid black;
+}
+input[type="button"]{
+    color: #FFFFFF;
+}
+input[type="radio"]{
+    display: block;
+}
+label{
+     display: block;
+    text-align: left;
+} 
+.warning{
+    color:#FF0000;
+    text-align: left;
+}
+
+/* Responsive */
+@media only screen and (max-width:600px){
+    .header{
+        flex-direction: column;
+        height: 160px;
+        justify-content: space-evenly;
+
+    }
+}

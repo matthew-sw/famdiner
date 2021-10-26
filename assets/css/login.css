@@ -1,0 +1,18 @@
+/* Content */
+.content{
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+input[type="text"], input[type="password"]{
+    width: 35%;
+}
+.form-component{
+    align-items: center;
+}
+
+/* Responsive */
+@media only screen and (max-width:600px){
+    input[type="text"], input[type="password"]{
+        width: 70%;
+    }
+}
